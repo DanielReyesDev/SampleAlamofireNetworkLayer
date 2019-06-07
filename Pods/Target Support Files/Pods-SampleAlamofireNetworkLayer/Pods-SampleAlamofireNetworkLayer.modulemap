@@ -1,0 +1,6 @@
+framework module Pods_SampleAlamofireNetworkLayer {
+  umbrella header "Pods-SampleAlamofireNetworkLayer-umbrella.h"
+
+  export *
+  module * { export * }
+}
