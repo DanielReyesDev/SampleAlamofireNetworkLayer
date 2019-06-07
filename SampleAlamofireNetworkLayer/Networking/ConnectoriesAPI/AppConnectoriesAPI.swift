@@ -19,7 +19,7 @@ class AppConnectoriesAPI: ConnectoriesAPI {
     
     func getConnectories(completion: @escaping (Result<[Connectory]>) -> Void) {
         let router = APIRouter.getConnectories
-        self.sessionManager.performRequest(route: router, decoder: JSONDecoder()) { (result: Result<[Connectory]>) in
+        self.sessionManager.performRequest(route: router) { (result: Result<[Connectory]>) in
             completion(result)
         }
     }
